@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from "../search/search-bar";
+import Button from '../buttons/button';
 
 
 const NavBar: React.FC = () => {
@@ -13,7 +14,8 @@ const NavBar: React.FC = () => {
         {/* Navigation links */}
         <ul className="flex items-center">
           <li className="mr-6">Blogs</li>
-           <SearchBar/>
+          <li className="mr-6"><SearchBar/></li>
+          <li className="mr-6"> <Button/></li>
         </ul>
       </div>
     </nav>
