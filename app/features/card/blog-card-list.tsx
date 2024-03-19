@@ -2,6 +2,8 @@ import React from 'react';
 import blogData from '../../data/blogData';
 import Link from 'next/link'; // Import Link from next.js for client-side navigation
 
+
+
 const BlogList = () => {
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
