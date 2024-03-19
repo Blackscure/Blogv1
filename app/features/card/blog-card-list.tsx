@@ -2,9 +2,11 @@ import React from 'react';
 import blogData from '../../data/blogData';
 import Link from 'next/link'; // Import Link from next.js for client-side navigation
 
+
+
 const BlogList = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {blogData.map((post, index) => (
         <Link key={index} href={`/blog/${post.slug}`}> {/* Wrap each card in Link */}
           <a>
