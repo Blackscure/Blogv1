@@ -1,7 +1,19 @@
-import Image from "next/image";
+import NavBar from "./features/nav/nav";
+import Slogan from "./features/slogans/slogan";
+import Footer from "./features/footer/footer";
+import BlogList from "./features/card/blog-card-list";
+
+
 
 export default function Home() {
   return (
-    <h1>Hello</h1>
+   <div >
+   <NavBar/>
+   <Slogan/>
+   <BlogList/>
+   <Footer/>
+   
+  
+   </div>
   );
 }
