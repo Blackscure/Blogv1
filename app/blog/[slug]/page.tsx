@@ -22,11 +22,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <div>
       <NavBar />
-      <div>
-        <h1>{post.title}</h1>
-        <p>Date: {post.date}</p>
-        <p>{post.content}</p>
+    <div className="flex justify-center">
+      <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-xl shadow-md">
+        <h1 className="text-2xl font-bold mb-4">{post.title}</h1>
+        <p className="text-gray-600 mb-2">Date: {post.date}</p>
+        <p className="text-gray-800">{post.content}</p>
       </div>
+    </div>
       <Footer />
     </div>
   );
