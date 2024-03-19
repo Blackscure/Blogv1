@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Modal() {
   return (
-    <div className="w-full max-w-screen-lg mx-auto mt-8 p-6 bg-white rounded-xl shadow-md">
+    <div className="w-full max-w-screen-lg mx-auto mt-2 p-16 bg-white rounded-xl shadow-md">
       <h4 className="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
         Create Blog Post
       </h4>
@@ -65,6 +65,10 @@ export default function Modal() {
           </h6>
           <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
         </div>
+        <button className="bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-8 rounded float-right mt-4">
+  Save Changes
+</button>
+
       </form>
     </div>
   );
